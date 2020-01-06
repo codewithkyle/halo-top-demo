@@ -19,6 +19,10 @@ export class ProductGrid extends Component<ProductGridProps, ProductGridState> {
 
 	render() {
 		const products = this.props.products.map((product, i) => this.renderProduct(product, i));
-		return <div className="product-grid">{products}</div>;
+		return (
+			<div className="products">
+				<div className="grid">{products}</div>
+			</div>
+		);
 	}
 }

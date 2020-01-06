@@ -4,10 +4,11 @@
     display: inline-block;
     background-color: var(--mint);
     padding: 4rem;
-    height: calc(100vh - 92px);
-    position: fixed;
-    top: 92px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
     right: 0;
+    vertical-align: top;
 
     h1
     {

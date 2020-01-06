@@ -53,27 +53,21 @@
         
         <!-- Critical colors -->
         <style>
-            :root
-            {
+            :root {
                 font-size: 100%;
-                
-                --font: #333;
-                --background: #fff;
 
-                --loading-bar: #51b1f6;
-                --loading-bar-background: #163b52;
+                --loading-bar: #8bffe2;
+                --loading-bar-background: hsl(165, 100%, 93%);
+                --loading-bar-shadow: rgba(139, 255, 226, 0.87);
                 --loading-background: #fafafa;
-                --loading-font: #333;
+                --loading-font: #1A1A1A;
             }
-
-            @media (prefers-color-scheme: dark)
-            {
-                :root
-                {
-                    --font: #fff;
-                    --background: #232323;
-                    --loading-bar-background: #163b52;
-                    --loading-background: #232323;
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --loading-bar: #8bffe2;
+                    --loading-bar-background: hsl(165, 25%, 15%);
+                    --loading-bar-shadow: rgba(139, 255, 226, 0.87);
+                    --loading-background: #1A1A1A;
                     --loading-font: #fff;
                 }
             }
@@ -153,8 +147,7 @@
 
         <!-- Loading animations -->
         <style>
-            page-loading
-            {
+            page-loading {
                 width: 100vw;
                 height: 100vh;
                 display: flex;
@@ -165,7 +158,6 @@
                 align-items: center;
                 flex-flow: column wrap;
                 background-color: var(--loading-background);
-                color: var(--font);
                 font-size: 1.25rem;
                 z-index: 1000000;
                 user-select: none;
@@ -176,17 +168,15 @@
                 opacity: 0;
                 transition: all 150ms 150ms ease;
             }
-
-            html[state="hard-loading"] page-loading
-            {
+            html[state="hard-loading"] page-loading {
                 visibility: visible;
                 opacity: 1;
             }
-
-            page-loading span
-            {
+        
+            page-loading file-loading-message,
+            page-loading file-loading-value {
                 line-height: 1.618;
-                display: block;
+                display: inline-block;
                 font-size: 1.125rem;
                 font-weight: 400;
                 font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -194,20 +184,17 @@
                 opacity: 0.87;
                 color: var(--loading-font);
             }
-
-            page-loading page-loading-bar
-            {
+            page-loading page-loading-bar {
                 width: 200px;
+                margin-top: 0.5rem;
                 height: 2px;
                 position: relative;
-                background-color: var(--loading-bar);
+                background-color: var(--loading-bar-background);
                 overflow: hidden;
-                display: inline-block;
+                display: block;
                 box-shadow: inset 0 0 2px rgba(51,51,51,0.15);
             }
-
-            page-loading page-loading-bar bar-one
-            {
+            page-loading page-loading-bar bar-one {
                 left: -145%;
                 position: absolute;
                 box-sizing: border-box;
@@ -215,11 +202,9 @@
                 height: 100%;
                 animation: primaryBar 2s infinite linear;
             }
-
-            page-loading page-loading-bar bar-one::before
-            {
+            page-loading page-loading-bar bar-one::before {
                 content: "";
-                background-color: var(--loading-bar-background);
+                background-color: var(--loading-bar);
                 display: inline-block;
                 box-sizing: border-box;
                 position: absolute;
@@ -227,9 +212,7 @@
                 height: 100%;
                 animation: primaryScale 2s infinite linear;
             }
-
-            page-loading page-loading-bar bar-two
-            {
+            page-loading page-loading-bar bar-two {
                 left: -100%;
                 position: absolute;
                 width: 100%;
@@ -237,11 +220,9 @@
                 height: 100%;
                 animation: secondaryBar 2s infinite linear;
             }
-
-            page-loading page-loading-bar bar-two::before
-            {
+            page-loading page-loading-bar bar-two::before {
                 content: "";
-                background-color: var(--loading-bar-background);
+                background-color: var(--loading-bar);
                 display: inline-block;
                 box-sizing: border-box;
                 position: absolute;
@@ -249,87 +230,79 @@
                 height: 100%;
                 animation: secondaryScale 2s infinite linear;
             }
-
             page-loading resource-counter,
-            page-loading resource-total
-            {
+            page-loading resource-total {
                 display: inline-block;
             }
-
-            page-loading span.-slash
-            {
+            page-loading span.-slash {
                 font-size:0.75rem;
                 display:inline-block;
                 margin:0 0.25rem;
                 transform:translateY(-2px);
             }
-
-            @keyframes primaryBar{
-                0%{
+            @keyframes primaryBar {
+                0% {
                     transform: translateX(0);
                 }
-                20%{
+                20% {
                     transform: translateX(0);
                     animation-timing-function: cubic-bezier(.5,0,.70173,.49582);
                 }
-                59%{
+                59% {
                     transform: translateX(83.67142%);
                     animation-timing-function: cubic-bezier(.30244,.38135,.55,.95635);
                 }
-                100%{
+                100% {
                     transform: translateX(200.61106%);
                 }
             }
-
-            @keyframes secondaryBar{
-                0%{
+            @keyframes secondaryBar {
+                0% {
                     transform: translateX(0);
                     animation-timing-function: cubic-bezier(.15,0,.51506,.40969);
                 }
-                25%{
+                25% {
                     animation-timing-function: cubic-bezier(.31033,.28406,.8,.73371);
                     transform: translateX(37.65191%);
                 }
-                48.35%{
+                48.35% {
                     animation-timing-function: cubic-bezier(.4,.62704,.6,.90203);
                     transform: translateX(84.38617%);
                 }
-                100%{
+                100% {
                     transform: translateX(160.27778%);
                 }
             }
-
-            @keyframes primaryScale{
-                0%{
+            @keyframes primaryScale {
+                0% {
                     transform: scaleX(.08);
                 }
-                36%{
+                36% {
                     animation-timing-function: cubic-bezier(.33473,.12482,.78584,1);
                     transform: scaleX(.08);
                 }
-                69%{
+                69% {
                     animation-timing-function: cubic-bezier(.06,.11,.6,1);
                     transform: scaleX(.66148);
                 }
-                100%{
+                100% {
                     transform: scaleX(.08);
                 }
             }
-
-            @keyframes secondaryScale{
-                0%{
+            @keyframes secondaryScale {
+                0% {
                     animation-timing-function: cubic-bezier(.20503,.05705,.57661,.45397);
                     transform: scaleX(.08);
                 }
-                19%{
+                19% {
                     animation-timing-function: cubic-bezier(.15231,.19643,.64837,1.00432);
                     transform: scaleX(.4571);
                 }
-                44%{
+                44% {
                     animation-timing-function: cubic-bezier(.25776,-.00316,.21176,1.38179);
                     transform: scaleX(.72796);
                 }
-                100%{
+                100% {
                     transform: scaleX(.08);
                 }
             }
@@ -366,6 +339,13 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
 
+        <!-- Web Components Polyfill -->
+        <script>
+            if (typeof CustomElementRegistry === 'undefined') {
+                document.write('<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.4.0/webcomponents-bundle.js"><\/script>');
+            }
+        </script>
+
         <link rel="preload" href="{{ alias('@rootUrl')|trim('/') }}/assets/env.js" as="script" crossorigin="anonymous">
         <link rel="preload" href="{{ alias('@rootUrl')|trim('/') }}/assets/broadcaster.js" as="script" crossorigin="anonymous">
         <script type="module" src="{{ alias('@rootUrl')|trim('/') }}/assets/runtime.js"></script>
@@ -374,7 +354,8 @@
         {# Full screen loading animation #}
         <page-loading>
             <div>
-                <span>Loading page</span>
+                <file-loading-message>Loading page</file-loading-message>
+                <file-loading-value></file-loading-value>
                 <page-loading-bar>
                     <bar-one></bar-one>
                     <bar-two></bar-two>

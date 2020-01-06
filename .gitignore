@@ -13,3 +13,5 @@
 /vendor
 /public/assets
 /config/pwa-auto.php
+/public/service-worker.jscom
+/public/resources-cachebust.json

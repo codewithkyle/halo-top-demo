@@ -1,0 +1,27 @@
+:root
+{
+    --white: #fff;
+    --off-white: #f7f7f7;
+    --light-grey: #ececec;
+    --black: #0f0f0f;
+    --off-black: hsl(0, 0%, 18%);
+
+    --font: hsl(0, 0%, 20%);
+
+    --background: #fff;
+
+    --loading-bar-shadow: rgba(0, 191, 255, 0.87);
+    --loading-bar: #51b1f6;
+    --loading-bar-background: #163b52;
+    --loading-background: #fafafa;
+    --loading-font: #333;
+
+    --font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+    @media (prefers-color-scheme: dark)
+    {
+        --loading-font: #fff;
+        --loading-bar-background: #163b52;
+        --loading-background: #232323;
+    }
+}

@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 	entry: {
-		shop: path.join(__dirname, '/react/shop.tsx'),
+		shop: path.join(__dirname, '/react/shop/index.tsx'),
 	},
 	mode: 'development',
 	module: {
@@ -19,8 +19,8 @@ module.exports = {
 				loader: 'ts-loader',
 			},
 			{
-				test: /\.css$/,
-				use: ['style-loader', 'css-loader'],
+				test: /\.s[ac]ss$/i,
+				use: ['style-loader', 'css-loader', 'sass-loader'],
 			},
 		],
 	},

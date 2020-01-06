@@ -1,0 +1,57 @@
+.cart
+{
+    width: 40%;
+    display: inline-block;
+    background-color: var(--mint);
+    padding: 4rem;
+    height: calc(100vh - 92px);
+    position: fixed;
+    top: 92px;
+    right: 0;
+
+    h1
+    {
+        font-weight: var(--font-weight-heavy);
+        color: var(--coco);
+        font-size: 3rem;
+        line-height: 3.5rem;
+        display: block;
+        max-width: 250px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    #details
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+        dl
+        {
+            width: 175px;
+            display: inline-block;
+
+            dt,
+            dd
+            {
+                width: 50%;
+                display: inline-block;
+                line-height: 1.5rem;
+                color: var(--coco);
+                font-weight: var(--font-weight-heavy);
+            }
+        }
+
+        span
+        {
+            display: inline-block;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: var(--font-weight-medium);
+        }
+    }
+}

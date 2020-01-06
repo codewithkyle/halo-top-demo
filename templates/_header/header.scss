@@ -2,11 +2,11 @@ header
 {
     display: block;
     width:100vw;
-    margin-bottom: 2rem;
     padding: 2rem 1rem 1.75rem;
     background-color:var(--background);
     box-shadow: 0 2px 24px rgba(51,51,51,0.1);
     border-bottom:1px solid var(--off-white);
+    z-index: 1000;
 
     #header-logo
     {

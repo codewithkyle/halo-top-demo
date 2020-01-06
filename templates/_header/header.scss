@@ -1,0 +1,59 @@
+header
+{
+    display: block;
+    width:100vw;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem 1.75rem;
+    background-color:var(--background);
+    box-shadow: 0 2px 24px rgba(51,51,51,0.1);
+    border-bottom:1px solid var(--off-white);
+
+    #header-logo
+    {
+        font-weight:var(--font-weight-black);
+        text-transform: uppercase;
+        color:var(--primary);
+        font-size: 2rem;
+        transition: color 75ms ease;
+
+        &:hover,
+        &:focus
+        {
+            color: var(--font-color);
+        }
+    }
+
+    nav
+    {
+        display:flex;
+        justify-content: space-between;
+        width: 1200px;
+        height: 100%;
+        margin:0 auto;
+
+        div
+        {
+            display: inline-flex;
+            align-items: center;
+            flex-flow: row nowrap;
+        }
+
+        a
+        {
+            margin-left: 1.5rem;
+            transition: all 75ms ease;
+            font-weight: var(--font-weight-medium);
+
+            &:hover,
+            &:focus
+            {
+                color: var(--primary);
+            }
+
+            &:first-child
+            {
+                margin-left: 0;
+            }
+        }
+    }
+}

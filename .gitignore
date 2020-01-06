@@ -1,0 +1,15 @@
+# General
+# --------
+/.env
+/.idea
+.DS_Store
+/node_modules
+/public/uploads/*
+!/public/uploads/.gitkeep
+/public/imager
+
+# Remove before launch
+# --------
+/vendor
+/public/assets
+/config/pwa-auto.php

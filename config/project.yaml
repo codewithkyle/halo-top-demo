@@ -1,0 +1,153 @@
+dateModified: 1576524502
+email:
+  fromEmail: web@page.works
+  fromName: 'Craft Boilerplate'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  f5af2400-40de-41ae-8d1c-f6f8e0e4cd33:
+    name: Common
+fields:
+  cda061aa-272e-46e1-86a2-8b1bf4ab716e:
+    name: 'Alternate Description'
+    handle: alternateDescription
+    instructions: 'Provide a brief description of the image or icon. This description is not be visible to users and will be read to users with vision impairments or disabilities if they are utilizing screen reader technology. This is required in order to be in compliance with the Americans with Disabilities Act.'
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: f5af2400-40de-41ae-8d1c-f6f8e0e4cd33
+  d928b526-5d8e-4e33-b0d6-0f8757af070b:
+    name: SEO
+    handle: seo
+    instructions: ''
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: ether\seo\fields\SeoField
+    settings:
+      titleSuffix: null
+      suffixAsPrefix: null
+      title:
+        -
+          key: '1'
+          locked: '0'
+          template: '{title}'
+        -
+          key: '2'
+          locked: '1'
+          template: ' - {{ siteName }}'
+      description: ''
+      socialImage: ''
+      hideSocial: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    contentColumnType: text
+    fieldGroup: f5af2400-40de-41ae-8d1c-f6f8e0e4cd33
+plugins:
+  eager-beaver:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  imager:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  logs:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  matrixmate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  relabel:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.0
+  scss:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.1.0
+  smith:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  splash:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+    settings:
+      volume: '1'
+      authorField: ''
+      authorUrlField: ''
+      colorField: ''
+siteGroups:
+  5bff79a3-9f01-4048-b15d-e5bfa085b40f:
+    name: 'Craft Boilerplate'
+sites:
+  9d3d784a-1004-46ae-9e3d-d388b34a746f:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: 'Craft Boilerplate'
+    primary: true
+    siteGroup: 5bff79a3-9f01-4048-b15d-e5bfa085b40f
+    sortOrder: 1
+system:
+  edition: solo
+  name: 'Craft Boilerplate'
+  live: true
+  schemaVersion: 3.3.3
+  timeZone: America/Los_Angeles
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
+volumes:
+  903fdafc-f40e-4653-9242-0c7d2bf927ae:
+    name: Images
+    handle: images
+    type: craft\volumes\Local
+    hasUrls: true
+    url: '@web/uploads/images'
+    settings:
+      path: '@webroot/uploads/images'
+    sortOrder: 1
+    fieldLayouts:
+      ec539648-8861-4183-9aea-615ce175866b:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              cda061aa-272e-46e1-86a2-8b1bf4ab716e:
+                required: true
+                sortOrder: 1

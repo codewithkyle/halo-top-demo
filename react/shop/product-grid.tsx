@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import './product-grid.scss';
+import { ProductComponent } from './product';
 
 interface ProductGridProps {
 	products: Array<Product>;
@@ -15,7 +16,7 @@ export class ProductGrid extends Component<ProductGridProps, ProductGridState> {
 		super(props);
 	}
 
-	private renderProduct = (product: Product, i: number) => <div key={i}>{product.name}</div>;
+	private renderProduct = (product: Product, i: number) => <ProductComponent key={i} name={product.name} image={product.image} uuid={product.uuid} />;
 
 	render() {
 		const products = this.props.products.map((product, i) => this.renderProduct(product, i));

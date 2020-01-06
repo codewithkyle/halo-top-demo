@@ -17,10 +17,10 @@ export class ProductComponent extends Component<ProductProps, {}> {
 
 	render() {
 		return (
-			<div className="product">
+			<button className="product" tabIndex={0}>
 				<img src={this.props.image} alt={`pint of ${this.props.name}`} />
 				<span>{this.props.name}</span>
-			</div>
+			</button>
 		);
 	}
 }

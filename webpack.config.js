@@ -1,8 +1,10 @@
 const path = require('path');
 
+const basePath = path.join(__dirname, 'templates/frameworks/react');
+
 module.exports = {
 	entry: {
-		shop: path.join(__dirname, '/react/shop/index.tsx'),
+		shop: path.join(basePath, 'shop/index.tsx'),
 	},
 	mode: 'development',
 	module: {

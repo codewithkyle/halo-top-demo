@@ -1,8 +1,10 @@
 const sass = require('node-sass');
 const glob = require('glob');
 const fs = require('fs');
+const path = require('path');
 
 const sourceDir = 'templates';
+const ignoreDirs = ['frameworks'];
 
 class SassCompiler {
 	constructor() {
@@ -13,7 +15,8 @@ class SassCompiler {
 		try {
 			await this.preflight();
 			const files = await this.getFiles();
-			await this.compile(files);
+			const cleanFiles = await this.removeIgnored(files);
+			await this.compile(cleanFiles);
 		} catch (error) {
 			console.log(error);
 		}
@@ -40,6 +43,29 @@ class SassCompiler {
 
 				resolve(files);
 			});
+		});
+	}
+
+	removeIgnored(files) {
+		return new Promise(resolve => {
+			if (files.length === 0) {
+				resolve();
+			}
+			const cleanFiles = [];
+			for (let i = 0; i < files.length; i++) {
+				let clean = true;
+				for (let k = 0; k < ignoreDirs.length; k++) {
+					const pathname = path.normalize(`/${ignoreDirs[k]}/`);
+					if (new RegExp(pathname, 'gi').test(files[i])) {
+						clean = false;
+						break;
+					}
+				}
+				if (clean) {
+					cleanFiles.push(files[i]);
+				}
+			}
+			resolve(cleanFiles);
 		});
 	}
 

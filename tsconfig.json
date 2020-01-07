@@ -10,6 +10,6 @@
 		"jsx": "react",
 		"allowSyntheticDefaultImports": true
 	},
-	"include": ["templates", "controllers", "packages"],
-	"exclude": ["node_modules"]
+	"include": ["templates"],
+	"exclude": ["node_modules", "templates/frameworks"]
 }

@@ -6,7 +6,7 @@
 		"build:react": "webpack --config ./webpack.config.js",
 		"build": "npm-run-all build:*",
 		"bundle": "node ./tooling/bundler.js",
-		"eslint": "eslint -c .eslintrc.js templates/**/*.ts && eslint -c .eslintrc.js controllers/**/*.ts",
+		"eslint": "eslint -c .eslintrc.js templates/**/*.ts",
 		"stylelint": "stylelint \"templates/**/*.scss\"",
 		"lint": "npm run eslint && npm run stylelint",
 		"precommit": "npm run eslint && npm run stylelint"

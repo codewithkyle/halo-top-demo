@@ -35,11 +35,12 @@
             text-transform: uppercase;
             text-align: center;
             font-size: 0.75rem;
+            line-height: 1.5rem;
             font-weight: var(--font-weight-medium);
 
             &.large
             {
-                font-size: 1.125rem;
+                font-size: 1.25rem;
                 text-transform: none;
                 font-weight: var(--font-weight-heavy);
                 color: var(--coco);

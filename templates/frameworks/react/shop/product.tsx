@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, SyntheticEvent } from 'react';
 
 /** CSS */
 import './product.scss';
 
 interface ProductProps {
 	key: number;
-	name: string;
-	image: string;
-	uuid: string;
+	product: Product;
+	callback: Function;
 }
 
 export class ProductComponent extends Component<ProductProps, {}> {
@@ -15,11 +14,18 @@ export class ProductComponent extends Component<ProductProps, {}> {
 		super(props);
 	}
 
+	private handleClickEvent = (e: SyntheticEvent) => {
+		this.props.callback(this.props.product.uuid);
+	};
+
 	render() {
 		return (
-			<button className="product" tabIndex={0}>
-				<img src={this.props.image} alt={`pint of ${this.props.name}`} />
-				<span>{this.props.name}</span>
+			<button className="product" tabIndex={0} onClick={this.handleClickEvent}>
+				<img src={this.props.product.image} alt={`pint of ${this.props.product.name}`} draggable="false" />
+				<span>
+					{this.props.product.dairyFree ? 'Dariy Free ' : ''}
+					{this.props.product.name}
+				</span>
 			</button>
 		);
 	}

@@ -10,6 +10,11 @@
             transform: translateY(-0.75rem) scale(1.05);
             transition: all 400ms ease-in-out;
         }
+
+        span
+        {
+            color: var(--primary);
+        }
     }
 
     img
@@ -28,5 +33,7 @@
         line-height: 1.5rem;
         text-align: center;
         display: block;
+        color: var(--coco);
+        transition: color 75ms ease;
     }
 }

@@ -12,7 +12,7 @@ import { ProductGrid } from './product-grid';
 
 interface ShopState {
 	products: Array<Product>;
-	selectedProducts: Array<number>;
+	selectedProducts: Array<Product>;
 }
 
 interface ShopProps {}
@@ -45,11 +45,34 @@ class Shop extends Component<ShopProps, ShopState> {
 		this.getProducts();
 	}
 
+	private addToCart(uuid: string): void {
+		if (this.state.selectedProducts.length < 8) {
+			let prodcut;
+			for (let i = 0; i < this.state.products.length; i++) {
+				if (this.state.products[i].uuid === uuid) {
+					prodcut = this.state.products[i];
+				}
+			}
+			this.setState({ selectedProducts: [...this.state.selectedProducts, prodcut] });
+		}
+	}
+
+	private removeFromCart(uuid: string): void {
+		const selectedProducts = { ...this.state }.selectedProducts;
+		for (let i = 0; i < selectedProducts.length; i++) {
+			if (selectedProducts[i].uuid === uuid) {
+				selectedProducts.splice(i, 1);
+				break;
+			}
+		}
+		this.setState({ selectedProducts: selectedProducts });
+	}
+
 	render() {
 		return (
 			<div className="shop">
-				<ProductGrid products={this.state.products} />
-				<Cart />
+				<ProductGrid products={this.state.products} callback={this.addToCart.bind(this)} />
+				<Cart products={this.state.products} selectedProducts={this.state.selectedProducts} callback={this.removeFromCart.bind(this)} />
 			</div>
 		);
 	}

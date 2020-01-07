@@ -6,6 +6,7 @@ import { ProductComponent } from './product';
 
 interface ProductGridProps {
 	products: Array<Product>;
+	callback: Function;
 }
 
 interface ProductGridState {}
@@ -16,7 +17,7 @@ export class ProductGrid extends Component<ProductGridProps, ProductGridState> {
 		super(props);
 	}
 
-	private renderProduct = (product: Product, i: number) => <ProductComponent key={i} name={product.name} image={product.image} uuid={product.uuid} />;
+	private renderProduct = (product: Product, i: number) => <ProductComponent key={i} product={product} callback={this.props.callback} />;
 
 	render() {
 		const products = this.props.products.map((product, i) => this.renderProduct(product, i));

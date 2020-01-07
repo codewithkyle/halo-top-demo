@@ -8,4 +8,6 @@ interface Product {
 	protein: number;
 	seasonal: boolean;
 	uuid: string;
+	primaryColor: string;
+	secondaryColor: string;
 }

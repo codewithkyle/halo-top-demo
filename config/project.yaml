@@ -1,4 +1,4 @@
-dateModified: 1578510060
+dateModified: 1578511694
 email:
   fromEmail: web@page.works
   fromName: 'Craft Boilerplate'
@@ -368,6 +368,15 @@ users:
   photoVolumeUid: null
   photoSubpath: ''
 volumes:
+  1fa68939-78fe-49ca-9273-4f52fe70ca0d:
+    name: 'Product Images'
+    handle: productImages
+    type: craft\volumes\Local
+    hasUrls: true
+    url: '@web/uploads/product-images'
+    settings:
+      path: '@webroot/uploads/product-images'
+    sortOrder: 2
   903fdafc-f40e-4653-9242-0c7d2bf927ae:
     name: Images
     handle: images

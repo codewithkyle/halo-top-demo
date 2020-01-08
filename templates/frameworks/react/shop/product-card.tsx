@@ -26,8 +26,8 @@ export class ProductCard extends Component<ProductCardProps, {}> {
 			fill: this.props.product.secondaryColor === '' ? '#fff' : this.props.product.secondaryColor,
 		};
 		return (
-			<div className="product-card" tabIndex={0} onClick={this.handleClickEvent}>
-				<svg viewBox="0 0 64 64" aria-label={`pint of ${this.props.product.name} icon`}>
+			<button className="product-card" tabIndex={0} onClick={this.handleClickEvent} aria-label={`click to remove ${this.props.product.name}`}>
+				<svg viewBox="0 0 64 64" aria-hidden="true">
 					<polygon style={secondaryColor} points="11.1,14 52.9,14 50.9,58.6 13.1,58.6 " />
 					<path style={primaryColor} d="M4.9,2v12h5l2.1,46.9h39.8L54,14h5V2H4.9z M50.9,58.6H13.1l-2-44.6h41.9L50.9,58.6z" />
 					<path
@@ -43,7 +43,7 @@ export class ProductCard extends Component<ProductCardProps, {}> {
 					{this.props.product.dairyFree ? 'Dairy Free ' : ''}
 					{this.props.product.name}
 				</span>
-			</div>
+			</button>
 		);
 	}
 }

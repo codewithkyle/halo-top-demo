@@ -90,4 +90,35 @@
             }
         }
     }
+
+    #checkout-button
+    {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0 3rem;
+        margin-top: 3rem;
+        text-align: center;
+        height: 52px;
+        background-color: var(--white);
+        border-radius: 26px;
+        color: var(--pink);
+        font-weight: var(--font-weight-heavy);
+        font-size: 1.5rem;
+        user-select: none;
+        line-height: 36px;
+        cursor: default;
+        transition: all 75ms ease;
+
+        &.can-checkout
+        {
+            &:hover,
+            &:focus
+            {
+                background-color: var(--pink);
+                color: var(--white);
+                cursor: pointer;
+            }
+        }
+    }
 }

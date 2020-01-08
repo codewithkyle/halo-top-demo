@@ -42,9 +42,30 @@ export class Cart extends Component<CartProps, {}> {
 		);
 	};
 
+	private renderCheckoutButton = items => {
+		if (items !== 4 && items !== 8) {
+			return <button id="checkout-button">{items} in your pack</button>;
+		} else {
+			if (items === 4) {
+				return (
+					<button id="checkout-button" className="can-checkout">
+						Checkout for $45
+					</button>
+				);
+			} else if (items === 8) {
+				return (
+					<button id="checkout-button" className="can-checkout">
+						Checkout for $64
+					</button>
+				);
+			}
+		}
+	};
+
 	render() {
 		const items = this.props.selectedProducts.map((uuid, i) => this.renderProductCard(uuid, i));
 		let emptySlots = null;
+		let checkoutButton = this.renderCheckoutButton(items.length);
 		if (items.length < 8) {
 			const emptySlotCount = [];
 			for (let i = 0; i < 8 - items.length; i++) {
@@ -64,6 +85,7 @@ export class Cart extends Component<CartProps, {}> {
 					{items}
 					{emptySlots}
 				</div>
+				{checkoutButton}
 			</div>
 		);
 	}

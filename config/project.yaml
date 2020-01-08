@@ -1,4 +1,4 @@
-dateModified: 1578329478
+dateModified: 1578510060
 email:
   fromEmail: web@page.works
   fromName: 'Craft Boilerplate'
@@ -7,6 +7,34 @@ fieldGroups:
   f5af2400-40de-41ae-8d1c-f6f8e0e4cd33:
     name: Common
 fields:
+  a64d06a4-00d1-4302-9d32-bf2bb0ad603e:
+    name: 'Single Image 1'
+    handle: singleimage1
+    instructions: ''
+    searchable: false
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: '1'
+      defaultUploadLocationSource: 'volume:903fdafc-f40e-4653-9242-0c7d2bf927ae'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:903fdafc-f40e-4653-9242-0c7d2bf927ae'
+      singleUploadLocationSubpath: ''
+      restrictFiles: '1'
+      allowedKinds:
+        - image
+      sources:
+        - 'volume:903fdafc-f40e-4653-9242-0c7d2bf927ae'
+      source: null
+      targetSiteId: null
+      viewMode: large
+      limit: '1'
+      selectionLabel: 'Add an Image'
+      localizeRelations: false
+      validateRelatedElements: '1'
+    contentColumnType: string
+    fieldGroup: f5af2400-40de-41ae-8d1c-f6f8e0e4cd33
   cda061aa-272e-46e1-86a2-8b1bf4ab716e:
     name: 'Alternate Description'
     handle: alternateDescription
@@ -54,6 +82,23 @@ fields:
         - ''
         - ''
         - ''
+    contentColumnType: text
+    fieldGroup: f5af2400-40de-41ae-8d1c-f6f8e0e4cd33
+  ed9e4b46-abe6-4c9e-8a51-4caf0ecc6fc7:
+    name: 'Text 1'
+    handle: text1
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
     contentColumnType: text
     fieldGroup: f5af2400-40de-41ae-8d1c-f6f8e0e4cd33
 plugins:
@@ -106,6 +151,197 @@ plugins:
       authorField: ''
       authorUrlField: ''
       colorField: ''
+relabel:
+  159e78f9-460d-40de-bfd2-13df8407f86a:
+    field: ed9e4b46-abe6-4c9e-8a51-4caf0ecc6fc7
+    fieldLayout: df8ead2b-e0c7-4930-b881-1196a9024133
+    instructions: ''
+    name: Heading
+  4aa2e5d6-c1bb-4f74-9409-48b75bc19888:
+    field: a64d06a4-00d1-4302-9d32-bf2bb0ad603e
+    fieldLayout: 1a74e63d-50d3-4896-9f01-5d9cb583ea68
+    instructions: ''
+    name: 'Background Image'
+  4f66e58c-7087-45ce-b014-b014812607a9:
+    field: ed9e4b46-abe6-4c9e-8a51-4caf0ecc6fc7
+    fieldLayout: 1a74e63d-50d3-4896-9f01-5d9cb583ea68
+    instructions: ''
+    name: Heading
+  74b4d60b-c2ba-43e9-8348-9296e8ae7c04:
+    field: a64d06a4-00d1-4302-9d32-bf2bb0ad603e
+    fieldLayout: b069d361-37f1-4dfc-965d-117366e94b6c
+    instructions: ''
+    name: 'Background Image'
+  861cee66-3f09-4219-8497-2cd6d6227c69:
+    field: ed9e4b46-abe6-4c9e-8a51-4caf0ecc6fc7
+    fieldLayout: b069d361-37f1-4dfc-965d-117366e94b6c
+    instructions: ''
+    name: Heading
+  9811bc2d-f186-4beb-9325-1c5942d6137b:
+    field: a64d06a4-00d1-4302-9d32-bf2bb0ad603e
+    fieldLayout: df8ead2b-e0c7-4930-b881-1196a9024133
+    instructions: ''
+    name: 'Background Image'
+sections:
+  2c71dd10-d4f7-4311-8bb7-c5f891ece292:
+    name: 'Pops Landing Page'
+    handle: popsLandingPage
+    type: single
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      9d3d784a-1004-46ae-9e3d-d388b34a746f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: pops
+        template: _products/index.twig
+    entryTypes:
+      610d0ba3-d400-4be9-9ed9-d00e5027b2b9:
+        name: 'Pops Landing Page'
+        handle: popsLandingPage
+        hasTitleField: false
+        titleLabel: ''
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+        fieldLayouts:
+          1a74e63d-50d3-4896-9f01-5d9cb583ea68:
+            tabs:
+              -
+                name: 'Hero Area'
+                sortOrder: 1
+                fields:
+                  a64d06a4-00d1-4302-9d32-bf2bb0ad603e:
+                    required: true
+                    sortOrder: 2
+                  ed9e4b46-abe6-4c9e-8a51-4caf0ecc6fc7:
+                    required: true
+                    sortOrder: 1
+  5278c237-2e1c-4ec1-9b8f-9dae98feaa60:
+    name: 'Dairy-Free Landing Page'
+    handle: dairyFreeLandingPage
+    type: single
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      9d3d784a-1004-46ae-9e3d-d388b34a746f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: dairy-free
+        template: _products/index.twig
+    entryTypes:
+      95f466f4-7246-4401-ad68-17c99199ba70:
+        name: 'Dairy-Free Landing Page'
+        handle: dairyFree
+        hasTitleField: false
+        titleLabel: ''
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+        fieldLayouts:
+          df8ead2b-e0c7-4930-b881-1196a9024133:
+            tabs:
+              -
+                name: 'Hero Area'
+                sortOrder: 1
+                fields:
+                  a64d06a4-00d1-4302-9d32-bf2bb0ad603e:
+                    required: true
+                    sortOrder: 2
+                  ed9e4b46-abe6-4c9e-8a51-4caf0ecc6fc7:
+                    required: true
+                    sortOrder: 1
+  61c8899d-fb76-4e9e-ac6a-866e3df6a08a:
+    name: Pops
+    handle: pops
+    type: channel
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      9d3d784a-1004-46ae-9e3d-d388b34a746f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'pops/{slug}'
+        template: _products/product/index.twig
+    entryTypes:
+      a4ae7683-1e91-4833-a93e-eee84275fd80:
+        name: Pops
+        handle: pops
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: null
+        sortOrder: 1
+  9528235f-7f27-4dd2-a2e9-687bff378571:
+    name: Dairy
+    handle: dairy
+    type: channel
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      9d3d784a-1004-46ae-9e3d-d388b34a746f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'dairy/{slug}'
+        template: _products/product/index.twig
+    entryTypes:
+      a85835c9-ccfe-4a8c-8cdd-7866bfa6a512:
+        name: Dairy
+        handle: dairy
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: null
+        sortOrder: 1
+  a33782f6-860a-41d7-901b-d53c9ce0fa90:
+    name: 'Dairy Landing Page'
+    handle: dairyLandingPage
+    type: single
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      9d3d784a-1004-46ae-9e3d-d388b34a746f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: dairy
+        template: _products/index.twig
+    entryTypes:
+      a06da464-2aa4-4aca-9811-c5ffd15c5f58:
+        name: 'Dairy Landing Page'
+        handle: dairyLandingPage
+        hasTitleField: false
+        titleLabel: ''
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+        fieldLayouts:
+          b069d361-37f1-4dfc-965d-117366e94b6c:
+            tabs:
+              -
+                name: 'Hero Area'
+                sortOrder: 1
+                fields:
+                  a64d06a4-00d1-4302-9d32-bf2bb0ad603e:
+                    required: true
+                    sortOrder: 2
+                  ed9e4b46-abe6-4c9e-8a51-4caf0ecc6fc7:
+                    required: true
+                    sortOrder: 1
+  dabde016-51de-4268-8a00-4aa2cbb817a0:
+    name: Dairy-Free
+    handle: dairyFree
+    type: channel
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      9d3d784a-1004-46ae-9e3d-d388b34a746f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'dairy-free/{slug}'
+        template: _products/product/index.twig
+    entryTypes:
+      0d2844dc-2dbe-49f5-85b1-b60f9c531a30:
+        name: Dairy-Free
+        handle: dairyFree
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: null
+        sortOrder: 1
 siteGroups:
   5bff79a3-9f01-4048-b15d-e5bfa085b40f:
     name: 'Craft Boilerplate'

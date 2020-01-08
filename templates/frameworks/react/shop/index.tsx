@@ -71,7 +71,7 @@ class Shop extends Component<ShopProps, ShopState> {
 	render() {
 		return (
 			<div className="shop">
-				<ProductGrid products={this.state.products} callback={this.addToCart.bind(this)} />
+				<ProductGrid products={this.state.products} callback={this.addToCart.bind(this)} selectedProducts={this.state.selectedProducts} />
 				<Cart products={this.state.products} selectedProducts={this.state.selectedProducts} callback={this.removeFromCart.bind(this)} />
 			</div>
 		);

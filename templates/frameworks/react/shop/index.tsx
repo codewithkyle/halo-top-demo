@@ -27,6 +27,22 @@ class Shop extends Component<ShopProps, ShopState> {
 		};
 	}
 
+	private prefillCart(products: Array<Product>): void {
+		const selectedProducts = JSON.parse(sessionStorage.getItem('selectedProducts'));
+		if (selectedProducts) {
+			const validSelectedProducts = [];
+			selectedProducts.map(selectedProduct => {
+				for (let i = 0; i < products.length; i++) {
+					if (selectedProduct.uuid === products[i].uuid) {
+						validSelectedProducts.push(products[i]);
+						break;
+					}
+				}
+			});
+			this.setState({ selectedProducts: validSelectedProducts });
+		}
+	}
+
 	private async getProducts() {
 		const request = await fetch('/api/products.json', {
 			headers: new Headers({
@@ -37,6 +53,7 @@ class Shop extends Component<ShopProps, ShopState> {
 		if (request.ok) {
 			const response = await request.json();
 			products = response.data;
+			this.prefillCart(products);
 		}
 		this.setState({ products: products });
 	}
@@ -53,7 +70,9 @@ class Shop extends Component<ShopProps, ShopState> {
 					prodcut = this.state.products[i];
 				}
 			}
-			this.setState({ selectedProducts: [...this.state.selectedProducts, prodcut] });
+			const newSelectedProdcuts = [...this.state.selectedProducts, prodcut];
+			this.setState({ selectedProducts: newSelectedProdcuts });
+			sessionStorage.setItem('selectedProducts', JSON.stringify(newSelectedProdcuts));
 		}
 	}
 
@@ -66,6 +85,7 @@ class Shop extends Component<ShopProps, ShopState> {
 			}
 		}
 		this.setState({ selectedProducts: selectedProducts });
+		sessionStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
 	}
 
 	render() {

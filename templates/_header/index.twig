@@ -1,10 +1,12 @@
+{% set pageSeg = craft.app.request.segments|first %}
 <header eager-load-css="header">
     <nav>
         <a id="header-logo" href="{{ siteUrl }}">{{ "Halo Top"|t }}</a>
         <div>
-            <a href="{{ siteUrl|trim('/') }}/shop-react">{{ "Shop (React)"|t }}</a>
-            <a href="{{ siteUrl|trim('/') }}/shop-wc">{{ "Shop (Web Components)"|t }}</a>
-            <a rel="noopener" target="_blank" href="https://jintmethod.dev/">{{ "JINT Method"|t }}</a>
+            <a href="{{ siteUrl|trim('/') }}/shop" class="{{ (pageSeg == 'shop' ? 'is-active') }}">{{ "Shop"|t }}</a>
+            <a href="{{ siteUrl|trim('/') }}/pops" class="{{ (pageSeg == 'pops' ? 'is-active') }}">{{ "Pops"|t }}</a>
+            <a href="{{ siteUrl|trim('/') }}/dairy" class="{{ (pageSeg == 'dairy' ? 'is-active') }}">{{ "Dairy"|t }}</a>
+            <a href="{{ siteUrl|trim('/') }}/dairy-free" class="{{ (pageSeg == 'dairy-free' ? 'is-active') }}">{{ "Dairy-Free"|t }}</a>
             <a rel="noopener" target="_blank" href="https://djinnjs.com/">{{ "DjinnJS"|t }}</a>
         </div>
     </nav>

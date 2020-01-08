@@ -10,4 +10,5 @@ interface Product {
 	uuid: string;
 	primaryColor: string;
 	secondaryColor: string;
+	type: 'pint' | 'pops';
 }

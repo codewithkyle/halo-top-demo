@@ -11,7 +11,8 @@
 			"seasonal": false,
 			"uuid": "7366576f-5155-4bd7-9022-9b8ff2259fd6",
 			"primaryColor": "#531d86",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Black Cherry",
@@ -24,7 +25,8 @@
 			"seasonal": false,
 			"uuid": "86b7ef4b-ea3d-4a71-b8a5-c10e47fc3dc9",
 			"primaryColor": "#3d4461",
-			"secondaryColor": "#d3c2d6"
+			"secondaryColor": "#d3c2d6",
+			"type": "pint"
 		},
 		{
 			"name": "Blueberry Crumble",
@@ -37,7 +39,8 @@
 			"seasonal": false,
 			"uuid": "b197e822-3d23-448c-ac07-3c75ddf20f1c",
 			"primaryColor": "#1f1759",
-			"secondaryColor": "#b5b9dd"
+			"secondaryColor": "#b5b9dd",
+			"type": "pint"
 		},
 		{
 			"name": "Candy Bar",
@@ -50,7 +53,8 @@
 			"seasonal": false,
 			"uuid": "0608b9f8-c0a9-40eb-9181-c1fd5e96d2c2",
 			"primaryColor": "#bb8256",
-			"secondaryColor": "#653d33"
+			"secondaryColor": "#653d33",
+			"type": "pint"
 		},
 		{
 			"name": "Caramel Macchiato",
@@ -63,7 +67,8 @@
 			"seasonal": false,
 			"uuid": "086861cf-6a65-408d-b437-b15f9d66c636",
 			"primaryColor": "#8b5122",
-			"secondaryColor": "#f6f1e5"
+			"secondaryColor": "#f6f1e5",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate",
@@ -76,7 +81,8 @@
 			"seasonal": false,
 			"uuid": "8560cf7f-aff3-4aab-829f-6ac6dc4bb230",
 			"primaryColor": "#a88c34",
-			"secondaryColor": "#603f2e"
+			"secondaryColor": "#603f2e",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Covered Banana",
@@ -89,7 +95,8 @@
 			"seasonal": false,
 			"uuid": "f460a65b-16be-4207-8be0-f0f974596835",
 			"primaryColor": "#603f2e",
-			"secondaryColor": "#fbe34c"
+			"secondaryColor": "#fbe34c",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Mocha Chip",
@@ -102,7 +109,8 @@
 			"seasonal": false,
 			"uuid": "3c6c780b-f9f5-4cf2-b4ca-eda181019674",
 			"primaryColor": "#43281e",
-			"secondaryColor": "#f0e8dd"
+			"secondaryColor": "#f0e8dd",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Almond Crunch",
@@ -115,7 +123,8 @@
 			"seasonal": false,
 			"uuid": "b648a694-c6dc-4a4d-89b6-07f76979df85",
 			"primaryColor": "#4c2e20",
-			"secondaryColor": "#bb9a8d"
+			"secondaryColor": "#bb9a8d",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Chip Cookie Dough",
@@ -128,7 +137,8 @@
 			"seasonal": false,
 			"uuid": "4f47af6c-7622-406b-84b7-38691b1b2a4f",
 			"primaryColor": "#a88c34",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Cookies & Cream",
@@ -141,7 +151,8 @@
 			"seasonal": false,
 			"uuid": "af45a723-4af1-4ba5-bcac-c66c7628394a",
 			"primaryColor": "#352d2c",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Gingerbread House",
@@ -154,7 +165,8 @@
 			"seasonal": true,
 			"uuid": "99b10973-a3ce-4c6f-a302-acbee4ce3d03",
 			"primaryColor": "#e34446",
-			"secondaryColor": "#e4b890"
+			"secondaryColor": "#e4b890",
+			"type": "pint"
 		},
 		{
 			"name": "Key Lime Pie",
@@ -167,7 +179,8 @@
 			"seasonal": true,
 			"uuid": "e169ca50-1d6d-4300-8d4a-4331f547e459",
 			"primaryColor": "#7f9849",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Lemon Cake",
@@ -180,7 +193,8 @@
 			"seasonal": false,
 			"uuid": "1ea58d98-f663-4ace-8336-b004728d5453",
 			"primaryColor": "#fbe34c",
-			"secondaryColor": "#fff9bf"
+			"secondaryColor": "#fff9bf",
+			"type": "pint"
 		},
 		{
 			"name": "Mint Chip",
@@ -193,7 +207,8 @@
 			"seasonal": false,
 			"uuid": "90adc0d6-b62f-4520-b2e9-5a40be08d09f",
 			"primaryColor": "#a88c34",
-			"secondaryColor": "#d8eae3"
+			"secondaryColor": "#d8eae3",
+			"type": "pint"
 		},
 		{
 			"name": "Oatmeal Cookie",
@@ -206,7 +221,8 @@
 			"seasonal": false,
 			"uuid": "da523434-42d4-4dc7-840f-e33cbdc43e5d",
 			"primaryColor": "#d2ba92",
-			"secondaryColor": "#6a4f49"
+			"secondaryColor": "#6a4f49",
+			"type": "pint"
 		},
 		{
 			"name": "Peaches & Cream",
@@ -219,7 +235,8 @@
 			"seasonal": false,
 			"uuid": "dd4bf5b0-4981-4776-8abd-883e3c17b66d",
 			"primaryColor": "#ee6f36",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Peanut Butter & Jelly",
@@ -232,7 +249,8 @@
 			"seasonal": false,
 			"uuid": "a69cf323-0659-4ff6-96bf-e97e069316a6",
 			"primaryColor": "#e1a868",
-			"secondaryColor": "#cc3350"
+			"secondaryColor": "#cc3350",
+			"type": "pint"
 		},
 		{
 			"name": "Peanut Butter Cup",
@@ -245,7 +263,8 @@
 			"seasonal": false,
 			"uuid": "f905e04d-d83a-4835-b6a7-c78f42e2781f",
 			"primaryColor": "#4c2e20",
-			"secondaryColor": "#b36528"
+			"secondaryColor": "#b36528",
+			"type": "pint"
 		},
 		{
 			"name": "Pistachio",
@@ -258,7 +277,8 @@
 			"seasonal": false,
 			"uuid": "4fa06976-c0b3-4311-88f8-27116153ac8c",
 			"primaryColor": "#c7dc93",
-			"secondaryColor": "#799655"
+			"secondaryColor": "#799655",
+			"type": "pint"
 		},
 		{
 			"name": "Pumpkin Pie",
@@ -270,8 +290,9 @@
 			"protein": 20,
 			"seasonal": true,
 			"uuid": "9942c6ca-99ee-43be-b7c8-9423ed3a1bad",
-			"primaryColor": "",
-			"secondaryColor": ""
+			"primaryColor": "#fdf8cd",
+			"secondaryColor": "#c78644",
+			"type": "pint"
 		},
 		{
 			"name": "Rainbow Swirl",
@@ -284,7 +305,8 @@
 			"seasonal": false,
 			"uuid": "05ecca80-d726-4bfc-a055-dfb3d5be45a6",
 			"primaryColor": "#d850a6",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Red Velvet",
@@ -297,7 +319,8 @@
 			"seasonal": false,
 			"uuid": "657f3cb1-14b7-442e-820a-90bb8f8b54f1",
 			"primaryColor": "#a88c34",
-			"secondaryColor": "#8d253e"
+			"secondaryColor": "#8d253e",
+			"type": "pint"
 		},
 		{
 			"name": "S'mores",
@@ -310,7 +333,8 @@
 			"seasonal": false,
 			"uuid": "aa0e5471-5b61-4e75-b2c8-f4767c77fde7",
 			"primaryColor": "#c3aa7e",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Sea Salt Caramel",
@@ -323,7 +347,8 @@
 			"seasonal": false,
 			"uuid": "9938029f-b5ed-4fb4-b38a-caaa83358a21",
 			"primaryColor": "#c27c37",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Strawberry",
@@ -336,7 +361,8 @@
 			"seasonal": false,
 			"uuid": "242cbe13-89ce-4c00-828c-6bd78b356919",
 			"primaryColor": "#d32d3c",
-			"secondaryColor": "#f7e1df"
+			"secondaryColor": "#f7e1df",
+			"type": "pint"
 		},
 		{
 			"name": "Vanilla Bean",
@@ -349,7 +375,8 @@
 			"seasonal": false,
 			"uuid": "da76b75a-4b3e-4cf9-8fca-1b6b2a15c93a",
 			"primaryColor": "#a88c34",
-			"secondaryColor": "#fef4df"
+			"secondaryColor": "#fef4df",
+			"type": "pint"
 		},
 		{
 			"name": "Birthday Cake",
@@ -362,7 +389,8 @@
 			"seasonal": false,
 			"uuid": "42c8c2bf-7e5b-4786-acd6-d8d9c0bc0632",
 			"primaryColor": "#531d86",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Candy Bar",
@@ -375,7 +403,8 @@
 			"seasonal": false,
 			"uuid": "b803d025-9db8-4eb9-9ea7-6e1c3bf99d6e",
 			"primaryColor": "#bb8256",
-			"secondaryColor": "#653d33"
+			"secondaryColor": "#653d33",
+			"type": "pint"
 		},
 		{
 			"name": "Caramel Macchiato",
@@ -388,7 +417,8 @@
 			"seasonal": false,
 			"uuid": "508c3a8f-01eb-4293-a421-a043a99eb96f",
 			"primaryColor": "#8b5122",
-			"secondaryColor": "#f6f1e5"
+			"secondaryColor": "#f6f1e5",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate",
@@ -401,7 +431,8 @@
 			"seasonal": false,
 			"uuid": "ac7e1981-e154-4d35-9b8b-a60808622d47",
 			"primaryColor": "#a88c34",
-			"secondaryColor": "#603f2e"
+			"secondaryColor": "#603f2e",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Almond Crunch",
@@ -414,7 +445,8 @@
 			"seasonal": false,
 			"uuid": "4d1017d5-fc29-4f1d-8a9b-59171c87a12a",
 			"primaryColor": "#4c2e20",
-			"secondaryColor": "#bb9a8d"
+			"secondaryColor": "#bb9a8d",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Chip Cookie Dough",
@@ -427,7 +459,8 @@
 			"seasonal": false,
 			"uuid": "c8f61a18-4240-47be-82cc-8813a1e0e90c",
 			"primaryColor": "#a88c34",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Hazelnut",
@@ -440,7 +473,8 @@
 			"seasonal": false,
 			"uuid": "e54bbf43-6790-48d3-85dc-5a69d228d08a",
 			"primaryColor": "#593f40",
-			"secondaryColor": "#ae6b2d"
+			"secondaryColor": "#ae6b2d",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Peppermint Crunch",
@@ -453,7 +487,8 @@
 			"seasonal": true,
 			"uuid": "14094db0-d8f9-4b8d-9dea-aaf176aaf53f",
 			"primaryColor": "#84c89d",
-			"secondaryColor": "#603c2d"
+			"secondaryColor": "#603c2d",
+			"type": "pint"
 		},
 		{
 			"name": "Mint Fudge Cookie",
@@ -466,7 +501,8 @@
 			"seasonal": false,
 			"uuid": "8ff441da-9a9e-4732-84d9-bcc8c3d491b5",
 			"primaryColor": "#c4dcd3",
-			"secondaryColor": "#5a3f3f"
+			"secondaryColor": "#5a3f3f",
+			"type": "pint"
 		},
 		{
 			"name": "Oatmeal Cookie",
@@ -479,7 +515,8 @@
 			"seasonal": false,
 			"uuid": "ee79c252-e74f-411a-b6bf-7191e2ce5139",
 			"primaryColor": "#d2ba92",
-			"secondaryColor": "#6a4f49"
+			"secondaryColor": "#6a4f49",
+			"type": "pint"
 		},
 		{
 			"name": "Peanut Butter & Jelly",
@@ -492,7 +529,8 @@
 			"seasonal": false,
 			"uuid": "f1ac6be7-e453-4036-a60f-46d0a5cdee0d",
 			"primaryColor": "#e3a765",
-			"secondaryColor": "#cc3350"
+			"secondaryColor": "#cc3350",
+			"type": "pint"
 		},
 		{
 			"name": "Peanut Butter Cup",
@@ -505,7 +543,8 @@
 			"seasonal": false,
 			"uuid": "175bb380-e75d-4e3e-94eb-140fc1751144",
 			"primaryColor": "#4c2e20",
-			"secondaryColor": "#b36528"
+			"secondaryColor": "#b36528",
+			"type": "pint"
 		},
 		{
 			"name": "Pumpkin Pie",
@@ -518,7 +557,8 @@
 			"seasonal": true,
 			"uuid": "e325b934-3f7e-43d3-8444-decd414ebf18",
 			"primaryColor": "#fdf8cd",
-			"secondaryColor": "#c78644"
+			"secondaryColor": "#c78644",
+			"type": "pint"
 		},
 		{
 			"name": "Sea Salt Caramel",
@@ -531,7 +571,8 @@
 			"seasonal": false,
 			"uuid": "aa006a87-2847-4b6d-b18a-2b32816abcab",
 			"primaryColor": "#c27c37",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pint"
 		},
 		{
 			"name": "Toasted Coconut",
@@ -544,7 +585,8 @@
 			"seasonal": false,
 			"uuid": "d3004396-6f6f-47b1-afbb-d69a53eda459",
 			"primaryColor": "#593e33",
-			"secondaryColor": "#f4c383"
+			"secondaryColor": "#f4c383",
+			"type": "pint"
 		},
 		{
 			"name": "Vanilla Maple",
@@ -557,7 +599,8 @@
 			"seasonal": false,
 			"uuid": "19ebd3ae-78bd-434f-8407-c1453c3283db",
 			"primaryColor": "#301516",
-			"secondaryColor": "#d2ba92"
+			"secondaryColor": "#d2ba92",
+			"type": "pint"
 		},
 		{
 			"name": "Chocolate Chip Cookie Dough Pops",
@@ -570,7 +613,8 @@
 			"seasonal": false,
 			"uuid": "5f88023d-72f8-4c69-85b3-6114cd989570",
 			"primaryColor": "#a88c34",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pops"
 		},
 		{
 			"name": "Mint Chip Pops",
@@ -583,7 +627,8 @@
 			"seasonal": false,
 			"uuid": "7665a886-edaf-4cb2-a36b-de73c81fea30",
 			"primaryColor": "#d8eae3",
-			"secondaryColor": "#fff"
+			"secondaryColor": "#fff",
+			"type": "pops"
 		},
 		{
 			"name": "Peanut Butter Swirl Pops",
@@ -596,7 +641,8 @@
 			"seasonal": false,
 			"uuid": "6fca0167-eb30-41ec-8a24-ce4fdc07f8b7",
 			"primaryColor": "#b36528",
-			"secondaryColor": "#4c2e20"
+			"secondaryColor": "#4c2e20",
+			"type": "pops"
 		},
 		{
 			"name": "Strawberry Cheesecake Pops",
@@ -609,7 +655,8 @@
 			"seasonal": false,
 			"uuid": "3086011b-943f-457e-8fee-4e24a7647696",
 			"primaryColor": "#d32d3c",
-			"secondaryColor": "#f7e1df"
+			"secondaryColor": "#f7e1df",
+			"type": "pops"
 		}
 	]
 }

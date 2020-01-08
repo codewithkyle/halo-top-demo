@@ -17,6 +17,19 @@
         padding: 4rem;
     }
 
+    .filters
+    {
+        display: flex;
+        width: 100%;
+        margin-bottom: 2rem;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        @media (min-width: 1024px){
+            justify-content: flex-end;
+        }
+    }
+
     .grid
     {
         width: 100%;
